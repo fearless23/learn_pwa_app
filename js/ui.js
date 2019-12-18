@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // nav menu
   const menus = document.querySelectorAll('.side-menu');
+  // M is materialize Object
   M.Sidenav.init(menus, {edge: 'right'});
   // add recipe form
   const forms = document.querySelectorAll('.side-form');
