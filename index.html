@@ -1,115 +1,180 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#FFE1C4">
-  <title>Food Ninja 2</title>
-  <!-- materialize icons, css & js -->
-  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" href="/css/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="/js/materialize.min.js"></script>
-  <link rel="manifest" href="/manifest.json">
-  <!-- iOS Support -->
-  <link rel="apple-touch-icon" href="/icons/icon-96x96.png">
-  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#FFE1C4" />
+    <title>Food Ninja 2</title>
+    <!-- materialize icons, css & js -->
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link type="text/css" href="/css/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json" />
+    <!-- iOS Support -->
+    <link rel="apple-touch-icon" href="/icons/icon-96x96.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+  </head>
+  <body class="grey lighten-4">
+    <!-- top nav -->
+    <nav class="z-depth-0">
+      <div class="nav-wrapper container">
+        <a href="/">Food<span>Ninja</span></a>
+        <span class="right grey-text text-darken-1">
+          <i class="material-icons sidenav-trigger" data-target="side-menu"
+            >menu</i
+          >
+        </span>
+      </div>
+    </nav>
 
-</head>
-<body class="grey lighten-4">
+    <!-- side nav -->
+    <ul id="side-menu" class="sidenav side-menu">
+      <li><a class="subheader">FOODNINJA</a></li>
+      <li><a href="/" class="waves-effect">Home</a></li>
+      <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a href="/pages/contact.html" class="waves-effect">
+          <i class="material-icons">mail_outline</i>Contact</a
+        >
+      </li>
+    </ul>
 
-  <!-- top nav -->
-  <nav class="z-depth-0">
-    <div class="nav-wrapper container">
-      <a href="/">Food<span>Ninja</span></a>
-      <span class="right grey-text text-darken-1">
-        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
-      </span>
+    <!-- recipes -->
+    <div class="recipes container grey-text text-darken-1">
+      <h6 class="center">Recipes</h6>
+      <div class="card-panel recipe white row">
+        <img src="/img/dish.png" alt="recipe thumb" />
+        <div class="recipe-details">
+          <div class="recipe-title">Edame Noodles</div>
+          <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
+        </div>
+        <div class="recipe-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+      <div class="card-panel recipe white row">
+        <img src="/img/dish.png" alt="recipe thumb" />
+        <div class="recipe-details">
+          <div class="recipe-title">Edame Noodles</div>
+          <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
+        </div>
+        <div class="recipe-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+      <div class="card-panel recipe white row">
+        <img src="/img/dish.png" alt="recipe thumb" />
+        <div class="recipe-details">
+          <div class="recipe-title">Edame Noodles</div>
+          <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
+        </div>
+        <div class="recipe-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+      <div class="card-panel recipe white row">
+        <img src="/img/dish.png" alt="recipe thumb" />
+        <div class="recipe-details">
+          <div class="recipe-title">Edame Noodles</div>
+          <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
+        </div>
+        <div class="recipe-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
     </div>
-  </nav>
 
-  <!-- side nav -->
-  <ul id="side-menu" class="sidenav side-menu">
-    <li><a class="subheader">FOODNINJA</a></li>
-    <li><a href="/" class="waves-effect">Home</a></li>
-    <li><a href="/pages/about.html" class="waves-effect">About</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="/pages/contact.html" class="waves-effect">
-      <i class="material-icons">mail_outline</i>Contact</a>
-    </li>
-  </ul>
-
-  <!-- recipes -->
-  <div class="recipes container grey-text text-darken-1">
-    <h6 class="center">Recipes</h6>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
+    <div class="center">
+      <a
+        class="btn-floating btn-small btn-large add-btn sidenav-trigger"
+        data-target="side-form"
+      >
+        <i class="material-icons">add</i>
+      </a>
     </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-  </div>
 
-  <div class="center">
-    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
-      <i class="material-icons">add</i>
-    </a>
-  </div>
+    <!-- add recipe side nav -->
+    <div id="side-form" class="sidenav side-form">
+      <form class="add-recipe container section">
+        <h6>New Recipe</h6>
+        <div class="divider"></div>
+        <div class="input-field">
+          <input
+            placeholder="e.g. Ninja soup"
+            id="title"
+            type="text"
+            class="validate"
+          />
+          <label for="title">Recipe Title</label>
+        </div>
+        <div class="input-field">
+          <input
+            placeholder="e.g. Tofu, mushroom, garlic"
+            id="ingredients"
+            type="text"
+            class="validate"
+          />
+          <label for="ingredients">Ingredients</label>
+        </div>
+        <div class="input-field center">
+          <button class="btn-small">Add</button>
+        </div>
+      </form>
+    </div>
 
-  <!-- add recipe side nav -->
-  <div id="side-form" class="sidenav side-form">
-    <form class="add-recipe container section">
-      <h6 >New Recipe</h6>
-      <div class="divider"></div>
-      <div class="input-field">
-        <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
-        <label for="title">Recipe Title</label>
-      </div>
-      <div class="input-field">
-        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-        <label for="ingredients">Ingredients</label>
-      </div>
-      <div class="input-field center">
-        <button class="btn-small">Add</button>
-      </div>
-    </form>
-  </div>
+    <div class="row container">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Email</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock</i>
+            <input id="icon_password" type="password" class="validate">
+            <label for="icon_password">Password</label>
+          </div>
+        </div>
+        <div class="row center">
+          <!-- <a class="waves-effect waves-light btn" onclick="login('jaspreetsingh2379@gmail.com', 'jassi@123')"><i class="material-icons right">submit</i>Login</a> -->
+          <button class="waves-effect waves-light btn" onclick="googleLogin()"><i class="material-icons right">google</i>Google</button>
+        </div>
+      </form>
+    </div>
 
-  <script src="/js/app.js"></script>
-  <script src="/js/ui.js"></script>
-</body>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script> -->
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script> -->
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDTufgUzUUvWDgYil8MFKsKmSQ97gaxw1E",
+        authDomain: "pwa-learn-app.firebaseapp.com",
+        databaseURL: "https://pwa-learn-app.firebaseio.com",
+        projectId: "pwa-learn-app",
+        storageBucket: "pwa-learn-app.appspot.com",
+        messagingSenderId: "944103802509",
+        appId: "1:944103802509:web:7e33b956280d45709244c4"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="/js/fdb.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/ui.js"></script>
+  </body>
 </html>
