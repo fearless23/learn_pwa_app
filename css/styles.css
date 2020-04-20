@@ -1,8 +1,8 @@
 /* colours */
 :root{
-  --primary: #FFE9D2;
-  --secondary: #FFE1C4;
-  --title: #FF8816;
+  --primary: #A9D8FD;   /*= hsl(206, 95%, 83%) #FFE9D2 = hsl(31, 100%, 91%) */
+  --secondary: #9CD6FC; /*= hsl(204, 95%, 80%) #F F E1C4 = hsl(29, 100%, 88%) */
+  --title: #2A98EF;
 }
 
 /* layout styles */

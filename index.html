@@ -3,8 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#FFE1C4" />
-    <title>Food Ninja 2</title>
+    <meta name="theme-color" content="#9CD6FC" />
+    <title>Code God</title>
     <!-- materialize icons, css & js -->
     <link type="text/css" href="/css/materialize.min.css" rel="stylesheet" />
     <link
@@ -22,7 +22,7 @@
     <!-- top nav -->
     <nav class="z-depth-0">
       <div class="nav-wrapper container">
-        <a href="/">Food<span>Ninja</span></a>
+        <a href="/">Code<span>God</span></a>
         <span class="right grey-text text-darken-1">
           <i class="material-icons sidenav-trigger" data-target="side-menu"
             >menu</i
@@ -33,7 +33,7 @@
 
     <!-- side nav -->
     <ul id="side-menu" class="sidenav side-menu">
-      <li><a class="subheader">FOODNINJA</a></li>
+      <li><a class="subheader">CODE GOD</a></li>
       <li><a href="/" class="waves-effect">Home</a></li>
       <li><a href="/pages/about.html" class="waves-effect">About</a></li>
       <li><div class="divider"></div></li>
@@ -126,26 +126,63 @@
         </div>
       </form>
     </div>
-
+    <!-- 
     <div class="row container">
       <form class="col s12">
         <div class="row">
-          <div class="input-field col s6">
+          <div class="input-field col s12 m6">
             <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
+            <input id="icon_prefix" type="text" class="validate" />
             <label for="icon_prefix">Email</label>
           </div>
-          <div class="input-field col s6">
+          <div class="input-field col s12 m6">
             <i class="material-icons prefix">lock</i>
-            <input id="icon_password" type="password" class="validate">
+            <input id="icon_password" type="password" class="validate" />
             <label for="icon_password">Password</label>
           </div>
         </div>
-        <div class="row center">
-          <!-- <a class="waves-effect waves-light btn" onclick="login('jaspreetsingh2379@gmail.com', 'jassi@123')"><i class="material-icons right">submit</i>Login</a> -->
-          <button class="waves-effect waves-light btn" onclick="googleLogin()"><i class="material-icons right">google</i>Google</button>
-        </div>
       </form>
+      <div class="row center">
+        <button
+          class="waves-effect waves-light btn"
+          onclick="login('jaspreetsingh2379@gmail.com', 'jassi@123')"
+        >
+          <i class="material-icons right">cloud</i>Login
+        </button>
+        <button
+          class="waves-effect waves-light btn"
+          onclick="createUserEP('jaspreetsingh2379@gmail.com', 'jassi@123')"
+        >
+          <i class="material-icons right">cloud</i>Register
+        </button>
+        <button class="waves-effect waves-light btn" onclick="googleLogin()">
+          <i class="material-icons right">cloud</i>Google
+        </button>
+
+      </div>
+    </div>
+  -->
+    <div class="container row center">
+      <div id="recaptcha-container"></div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="mobNumber" type="text" class="validate" />
+        <label for="mobNumber">Mobile Number</label>
+      </div>
+
+      <button class="waves-effect waves-light btn" onclick="mobileLogin()">
+        Login Phone
+      </button>
+    </div>
+    <div class="container row center">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="code" type="text" class="validate" />
+        <label for="code">Code</label>
+      </div>
+      <button class="waves-effect waves-light btn" onclick="putCode()">
+        Confirm Phone
+      </button>
     </div>
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -164,8 +201,8 @@
         authDomain: "pwa-learn-app.firebaseapp.com",
         databaseURL: "https://pwa-learn-app.firebaseio.com",
         projectId: "pwa-learn-app",
-        storageBucket: "pwa-learn-app.appspot.com",
-        messagingSenderId: "944103802509",
+        // storageBucket: "pwa-learn-app.appspot.com",
+        // messagingSenderId: "944103802509",
         appId: "1:944103802509:web:7e33b956280d45709244c4"
       };
 
